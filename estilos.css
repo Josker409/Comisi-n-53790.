@@ -223,3 +223,124 @@ header{
     }
 }
 /* fin medidas query */
+
+
+/* inicio Pseudoclases y BEM */
+.card{
+    height: 45px;
+    width: 100%;
+    background-color: aqua;
+    border: aqua;
+}
+
+.card__title{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+}
+
+.card__btn{
+    color: #fff;
+    background-color: aqua;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+}
+/* fin Pseudoclases y BEM */
+
+/* inicio general de la pagina */
+main{
+    height: 250px;
+}
+aside{
+    height: 350px;
+}
+
+h4{
+    height: 300px;
+    padding: 90px;
+    background-position: center;
+}
+
+h5{
+    text-shadow: #fff;
+    text-decoration: #fff;
+    height: 10%;
+}
+
+body{
+    background-color: aqua;
+    /* text-shadow: #fff; */
+}
+
+dt{
+    color: rgb(255, 255, 255);
+    background-position: center;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.imagen{
+    width: 25px;
+}
+
+.cuadro{
+    height: 150px;
+    width: 150px;
+    background-color: darkorange;
+}
+
+.footer{
+    background-color: aqua;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    text-decoration: none;
+}
+
+footer .redes i{
+    color: rgb(255, 255, 255);
+    font-style: 50px;
+    letter-spacing: 30px;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    color: aqua;
+    position: fixed;
+    right: 80px;
+    bottom: 40px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px aqua;
+}
+
+.What{
+    height: 40px;
+    width: 40px;
+    background-color: springgreen;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+/* fin estructura pagina */
