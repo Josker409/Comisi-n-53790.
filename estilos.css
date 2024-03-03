@@ -1,0 +1,41 @@
+/* Inicio Flexbox (con cosas de otro lado :v)*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: aqua;
+    height: 80px;
+    width: 90%;
+    padding: 20px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo span{
+    color: #000;
+    text-shadow: 0 0 5px aqua;
+}
+
+.navbar{
+    background-color: aqua;
+}
+
+.navbar-brand{
+    color: aqua;
+}
+
+/* Fin Flexbox */
