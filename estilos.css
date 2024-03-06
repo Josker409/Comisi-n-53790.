@@ -122,6 +122,10 @@ header{
         padding: 1px;
         text-align: center;
     }
+
+    .imagem{
+        height: 120px;
+    }
 }
 
 @media only screen and (min-width: 360px)
@@ -140,6 +144,10 @@ header{
     .galeria{
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(3,40px);
+    }
+
+    .imagem{
+        height: 200px;
     }
 }
 
@@ -189,6 +197,10 @@ header{
     .item9{
         grid-column: 4/6;
         grid-row: 3/5;
+    }
+
+    .imagem{
+        height: 300px;
     }
 
 }
@@ -241,6 +253,10 @@ header{
     .item8{
         grid-column: 5/6;
         grid-row: 2/3;
+    }
+
+    .imagem{
+        height: 450px;
     }
 }
 /* fin medidas query */
