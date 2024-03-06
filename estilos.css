@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 *{
-    margin: 0;
+    margin: 2%;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
@@ -10,32 +10,32 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 header{
-    background-color: aqua;
+    background-color: #23B5D3;
     height: 80px;
     width: 90%;
     padding: 20px;
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+    color: #F8FFE5;
     display: flex;
     justify-content: space-between;
 }
 
 .logo span{
-    color: #000;
-    text-shadow: 0 0 5px aqua;
+    color: #131B23;
+    text-shadow: 0 0 5px #F8FFE5;
 }
 
 .navbar{
-    background-color: aqua;
+    background-color: #23B5D3;
 }
 
 .navbar-brand{
-    color: aqua;
+    color: #23B5D3;
 }
 
 /* Fin Flexbox */
@@ -44,7 +44,7 @@ header{
 .galeria{
     width: 100%;
     height: auto;
-    background-color: aqua;
+    background-color: #23B5D3;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3, 200px);
@@ -57,7 +57,7 @@ header{
 }
 
 .item{
-    border: 4px solid #fff;
+    border: 4px solid#F8FFE5;
     border-radius: 5px;
     background-size: cover;
     background-position: center;
@@ -79,7 +79,7 @@ header{
 
 .item3{
     grid-area: img3;
-    background-color: black;
+    background-color: #131B23;
 }
 
 .item4{
@@ -94,17 +94,17 @@ header{
 
 .item6{
     grid-area: img6;
-    background-color: forestgreen;
+    background-color: #F374AE;
 }
 
 .item7{
     grid-area: img7;
-    background-color: red;
+    background-color: #F8FFE5;
 }
 
 .item8{
     grid-area: img8;
-    background-color: rosybrown;
+    background-color: #48A9A6;
 }
 
 .item9{
@@ -114,10 +114,26 @@ header{
 /* fin Grid */
 
 /* inicio medidas query */
+
+@media only screen and (min-width: 0px) 
+{
+    *{
+        position: static;
+        padding: 1px;
+    }
+}
+
 @media only screen and (min-width: 360px)
 {
     *{
-        font-size: 25px;
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+    }
+
+    .logo span{
+        margin: 0;
+        padding: 0;
     }
 
     .galeria{
@@ -176,11 +192,15 @@ header{
 
 }
 
-
 @media only screen and (min-width: 1080px)
 {
     *{
         font-size: 25px;
+
+    }
+
+    .row{
+        margin: 10px;
     }
 
     .galeria{
@@ -229,8 +249,8 @@ header{
 .card{
     height: 45px;
     width: 100%;
-    background-color: aqua;
-    border: aqua;
+    background-color: #23B5D3;
+    border: #F8FFE5;
 }
 
 .card__title{
@@ -240,8 +260,8 @@ header{
 }
 
 .card__btn{
-    color: #fff;
-    background-color: aqua;
+    color: #F8FFE5;
+    background-color: #23B5D3;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -255,7 +275,7 @@ main{
     height: 250px;
 }
 aside{
-    height: 350px;
+    height: 300px;
 }
 
 h4{
@@ -265,18 +285,23 @@ h4{
 }
 
 h5{
-    text-shadow: #fff;
-    text-decoration: #fff;
-    height: 10%;
+    text-shadow: #F8FFE5;
+    text-decoration: #F8FFE5;
+    color: #F8FFE5;
+    height: 15%;
+}
+
+p1{
+    color: #F8FFE5;
 }
 
 body{
-    background-color: aqua;
+    background-color: #23B5D3;
     /* text-shadow: #fff; */
 }
 
 dt{
-    color: rgb(255, 255, 255);
+    color: #F8FFE5;
     background-position: center;
 }
 
@@ -291,11 +316,11 @@ dt{
 .cuadro{
     height: 150px;
     width: 150px;
-    background-color: darkorange;
+    background-color: #23B5D3;
 }
 
 .footer{
-    background-color: aqua;
+    background-color: #23B5D3;
     color: black;
     padding: 20px;
     text-align: center;
@@ -310,7 +335,7 @@ footer .redes a{
 }
 
 footer .redes i{
-    color: rgb(255, 255, 255);
+    color: #F8FFE5;
     font-style: 50px;
     letter-spacing: 30px;
 }
@@ -318,8 +343,8 @@ footer .redes i{
 .subir{
     height: 40px;
     width: 40px;
-    background-color: #fff;
-    color: aqua;
+    background-color: #23B5D3;
+    color: #23B5D3;
     position: fixed;
     right: 80px;
     bottom: 40px;
@@ -327,20 +352,37 @@ footer .redes i{
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    box-shadow: 0px 0px 5px 5px aqua;
+    box-shadow: 0px 0px 5px 5px #F8FFE5;
 }
 
 .What{
     height: 40px;
     width: 40px;
     background-color: springgreen;
-    color: #fff;
+    color: #F8FFE5;
     position: fixed;
     right: 30px;
     bottom: 40px;
     text-align: center;
     line-height: 35px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #F8FFE5;
+}
+
+.footer_2{
+    background-color: #23B5D3;
+    color: black;
+    padding: 20px;
+    text-align: center; 
+}
+
+.footer_2 .redes a{
+    text-decoration: none;
+}
+
+.footer_2 .redes i{
+    color: #F8FFE5;
+    font-style: 50px;
+    letter-spacing: 30px;
 }
 /* fin estructura pagina */
