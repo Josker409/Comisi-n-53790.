@@ -120,6 +120,7 @@ header{
     *{
         position: static;
         padding: 1px;
+        text-align: center;
     }
 }
 
@@ -128,7 +129,7 @@ header{
     *{
         font-size: 20px;
         margin: 0;
-        position: relative;
+        position: static;
     }
 
     .logo span{
@@ -196,11 +197,11 @@ header{
 {
     *{
         font-size: 25px;
-
+        position: static;
     }
 
     .row{
-        margin: 10px;
+        margin: 1px;
     }
 
     .galeria{
