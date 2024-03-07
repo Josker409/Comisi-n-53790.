@@ -9,12 +9,12 @@
     font-size: 25px;
 }
 
-.container{
-    max-width: 1200px;
-    min-height: 80px;
+/* .container{
+    width: 900px;
+    height: 100px;
 }
 
-.content{
+.dropdpwn menu{
     background-color: #23B5D3;
     min-height: 80px;
 }
@@ -53,13 +53,13 @@
 .menu label{
     cursor: pointer;
     display: none;
-}
+} */
 
-/* html{
+html{
     scroll-behavior: auto;
 } */
 
-/* header{
+.header{
     background-color: #23B5D3;
     height: 80px;
     width: 90%;
@@ -82,7 +82,7 @@
 
 .navbar-brand{
     color: #23B5D3;
-} */
+}
 
 /* Fin Flexbox */
 
@@ -203,7 +203,7 @@
         font-size: 20px;
     }
     
-    .content{
+    /* .content{
         min-width: 70px;
     }
 
@@ -229,7 +229,7 @@
 
     #menu:checked ~ .navbar{
         display: none;
-    }
+    } */
 
     .galeria{
         grid-template-columns: repeat(5,1fr);
