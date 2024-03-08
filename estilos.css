@@ -13,7 +13,7 @@ html{
     scroll-behavior: auto;
 }
 
-.header{
+header{
     background-color: #23B5D3;
     height: 80px;
     width: 90%;
@@ -23,6 +23,7 @@ html{
     color: #F8FFE5;
     display: flex;
     justify-content: space-between;
+
 }
 
 
@@ -127,6 +128,14 @@ html{
     .galeria{
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(3,40px);
+    }
+
+    .barra{
+        font-size: 200px;
+    }
+
+    h1{
+        padding: 80px;
     }
 
     .imagem{
@@ -281,10 +290,6 @@ aside{
     height: 300px;
 }
 
-h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 h4{
     height: 300px;
     padding: 90px;
@@ -299,7 +304,7 @@ h5{
 }
 
 .ahora{
-    color: #F374AE !important; 
+    color: #F374AE !important;
 }
 
 p1{
@@ -316,29 +321,34 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 30px;
     background-color: #23B5D3;
 }
 
 header{
     height: 80px;
-    width: 80px;
+    width: 100%;
     background-color: #23B5D3;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
     padding: 20px;
+    font-weight: bold;
 }
 
 .logo{
-    float: right;
+    float: left;
+}
+
+.logo span{
+    color: #131B23;
 }
 
 .barra ul li{
     list-style: none;
     display: inline-block;
-    padding: 100px;
+    padding: 2px;
 }
 
 .barra a{
@@ -347,12 +357,12 @@ header{
 
 .barra{
     float: right;
+    text-shadow: none;
 }
-
 
 dt{
     color: #F8FFE5;
-    background-position: center;
+    background-position: right;
 }
 
 .contenedor{
