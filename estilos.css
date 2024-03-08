@@ -189,78 +189,31 @@ html{
 
 }
 
-@media only screen and (max-width: 768px)
+/* @media only screen and (max-width: 768px)
 {
     .navbar{
         display: none;
-        /* flex-direction: column;
-        position: absolute;
-        align-items: center; */
-        /* top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #23B5D3;
-        box-shadow: #F374AE;
-        z-index: 999;  */
+        
     }
 
     .navbar-toggler{
         display: none;
     }
 
-    /* .nav-link{
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-        text-align: center;
-    } */
-
-    /* .menu-icon{
-        display: block;
-        cursor: pointer;
-    } */
-
-    /* .navbar-toggler{
-        display: block;
-        cursor: pointer;
-    }
-
-    .menu-toggle{
-        display: none;
-    } */
-
     #menu-toggler:checked + .navbar{
         display: flex;
     }
 
-    /* .i{
-        color: #F8FFE5;
-    } */
-
-    /* .logo{
-        display: flex;
-        margin-bottom: 20px;
-        text-align: center;
-    } */
 }
 
 @media only screen and (min-width: 769px) {
-    /* .navbar {
-        display: flex;
-        flex-direction: row;
-    } */
-
-    /* .menu-toggler {
-        display: none;
-    } */
-
     .navbar-toggler {
         display: none;
     }
 
-    /* .nav-link {
-        padding: 0 20px;
-    } */
-}
+} */
+
+
 
 @media only screen and (min-width: 1080px)
 {
@@ -381,7 +334,6 @@ p1{
 
 body{
     background-color: #23B5D3;
-    /* text-shadow: #fff; */
     font-family: sans-serif;
     margin: 0;
 }
@@ -394,9 +346,7 @@ header{
     background-color: #23B5D3;
 }
 
-.logo{
-    /* display: inline-block;
-    margin-right: 20px; */
+/* .logo{
     text-decoration: none;
     color: #131B23;
 }
@@ -426,10 +376,6 @@ header{
     border-bottom: 1px;
 }
 
-/* .navbar-toggler{
-    display: none;
-} */
-
 .logo span{
     color: #F374AE;
 }
@@ -438,24 +384,36 @@ a{
     text-decoration: none;
     color: #131B23;
 }
+ b */
 
-/* .menu-icon{
-    display: none;
-} */
-
-/* .navbar{
+header{
+    height: 80px;
+    width: 80px;
+    background-color: #23B5D3;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 20px;
 }
 
-.nav-link{
-    margin-right: 20px;
-} */
+.logo{
+    float: right;
+}
 
-/* nav a{
-    font-weight: 10px;
-    padding-right: 10px;
-} */
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 100px;
+}
+
+.barra a{
+    color: #F8FFE5;
+}
+
+.barra{
+    float: right;
+}
 
 
 dt{
