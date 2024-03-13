@@ -14,7 +14,7 @@ html{
 }
 
 header{
-    background-color: #23B5D3;
+    /* background-color: #23B5D3; */
     height: 80px;
     width: 90%;
     padding: 20px;
@@ -23,7 +23,6 @@ header{
     color: #F8FFE5;
     display: flex;
     justify-content: space-between;
-
 }
 
 
@@ -33,7 +32,6 @@ header{
 .galeria{
     width: 100%;
     height: auto;
-    background-color: #23B5D3;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3, 200px);
@@ -261,8 +259,11 @@ header{
 .card{
     height: 45px;
     width: 100%;
-    background-color: #23B5D3;
-    border: #F8FFE5;
+    /* background-color: #23B5D3; */
+    /* border: #F8FFE5; */
+    background: #00b4db; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00b4db, #0083b0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00b4db, #0083b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card__title{
@@ -272,8 +273,8 @@ header{
 }
 
 .card__btn{
-    color: #F8FFE5;
-    background-color: #23B5D3;
+    /* color: #F8FFE5;
+    background-color: #23B5D3; */
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -315,6 +316,9 @@ body{
     background-color: #23B5D3;
     font-family: sans-serif;
     margin: 0;
+    background: #00b4db; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00b4db, #0083b0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00b4db, #0083b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header{
@@ -322,13 +326,13 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: #23B5D3;
+    /* background-color: #23B5D3; */
 }
 
 header{
     height: 80px;
     width: 100%;
-    background-color: #23B5D3;
+    /* background-color: #23B5D3; */
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: space-between;
@@ -376,11 +380,11 @@ dt{
 .cuadro{
     height: 150px;
     width: 150px;
-    background-color: #23B5D3;
+    /* background-color: #23B5D3; */
 }
 
 .footer{
-    background-color: #23B5D3;
+    /* background-color: #23B5D3; */
     color: black;
     padding: 20px;
     text-align: center;
@@ -430,7 +434,7 @@ footer .redes i{
 }
 
 .footer_2{
-    background-color: #23B5D3;
+    /* background-color: #23B5D3; */
     color: black;
     padding: 20px;
     text-align: center;
