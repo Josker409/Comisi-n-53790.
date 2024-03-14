@@ -1,0 +1,394 @@
+$color_1: #F8FFE5
+$color_2: #fff
+$color_3: #F374AE
+$color_4: #131B23
+$color_5: black
+$color_6: #23B5D3
+$font-family_1: 'Oswald', sans-serif
+$font-family_2: Verdana, Geneva, Tahoma, sans-serif
+$font-family_3: sans-serif
+$font-family_4: 'Courier New', Courier, monospace
+$background-color_1: #131B23
+$background-color_2: #F374AE
+$background-color_3: #F8FFE5
+$background-color_4: #48A9A6
+$background-color_5: #23B5D3
+$background-color_6: springgreen
+
+
+@import "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+
+@keyframes aparecer 
+	from 
+		opacity: 0
+	
+	to 
+		opacity: 1
+	
+
+
+* 
+	margin: 2%
+	padding: 0
+	box-sizing: border-box
+	font-family: $font-family_1
+	font-size: 25px
+
+html 
+	scroll-behavior: auto
+
+header 
+	height: 80px
+	width: 90%
+	padding: 20px
+	font-size: 22px
+	font-family: $font-family_2
+	color: $color_1
+	display: flex
+	justify-content: space-between
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 30px
+	height: 80px
+	width: 100%
+	font-family: $font-family_4
+	display: flex
+	justify-content: space-between
+	font-size: 25px
+	padding: 20px
+	font-weight: bold
+
+.galeria 
+	width: 100%
+	height: auto
+	display: grid
+	grid-template-columns: repeat(5,1fr)
+	grid-template-rows: repeat(3, 200px)
+	grid-template-areas: "----  img2 img6 img4 img3" " img1 img2 img5 img4 img8" " img1 img7 img5 img9 img9"
+	grid-gap: 10px
+	padding: 10px
+
+.item 
+	border: 4px solid#F8FFE5
+	border-radius: 5px
+	background-size: cover
+	background-position: center
+	&:hover 
+		filter: grayscale(50%)
+	
+
+.item1 
+	grid-area: img1
+	background-image: url(multimedia/publication.png)
+
+.item2 
+	grid-area: img2
+	background-image: url(multimedia/laptop-6062423_1280.jpg)
+
+.item3 
+	grid-area: img3
+	background-color: $background-color_1
+
+.item4 
+	grid-area: img4
+	background-image: url(multimedia/digital-marketing-1433427_1280.jpg)
+
+.item5 
+	grid-area: img5
+	background-image: url(multimedia/office-925806_1280.jpg)
+
+.item6 
+	grid-area: img6
+	background-color: $background-color_2
+
+.item7 
+	grid-area: img7
+	background-color: $background-color_3
+
+.item8 
+	grid-area: img8
+	background-color: $background-color_4
+
+.item9 
+	grid-area: img9
+	background-image: url(multimedia/mesa-trabajo.png.jpg)
+
+.card 
+	height: 45px
+	width: 100%
+	background: #00b4db
+	background: -webkit-linear-gradient(to right, #00b4db, #0083b0)
+	background: linear-gradient(to right, #00b4db, #0083b0)
+
+.card__title 
+	color: $color_2
+	text-align: center
+	font-size: 35px
+
+.card__btn 
+	color: $color_1
+	text-decoration: none
+	font-size: 20px
+	text-align: center
+	text-transform: capitalize
+	display: block
+
+main 
+	height: 250px
+
+aside 
+	height: 300px
+
+h4 
+	height: 300px
+	padding: 90px
+	background-position: center
+
+h5 
+	text-shadow: #F8FFE5
+	text-decoration: #F8FFE5
+	color: $color_1
+	height: 15%
+
+.ahora 
+	color: $color_3 !important
+
+p1 
+	color: $color_1
+
+body 
+	background-color: $background-color_5
+	font-family: $font-family_3
+	margin: 0
+	background: #00b4db
+	background: -webkit-linear-gradient(to right, #00b4db, #0083b0)
+	background: linear-gradient(to right, #00b4db, #0083b0)
+
+.logo 
+	float: left
+	span 
+		color: $color_4
+	
+
+.barra 
+	ul 
+		li 
+			list-style: none
+			display: inline-block
+			padding: 2px
+		
+	
+	a 
+		color: $color_1
+		text-decoration: none
+		animation-duration: 2s
+		animation-name: aparecer
+		animation-delay: 3s
+		animation-direction: alternate
+		animation-iteration-count: infinite
+	
+	float: right
+	text-shadow: none
+
+dt 
+	color: $color_1
+	background-position: right
+
+.contenedor 
+	display: flex
+
+.imagen 
+	width: 25px
+
+.cuadro 
+	height: 150px
+	width: 150px
+
+.footer 
+	color: $color_5
+	padding: 20px
+	text-align: center
+
+footer 
+	p 
+		margin-bottom: 20px
+	
+	.redes 
+	a 
+			text-decoration: none
+		
+		i 
+			color: $color_1
+			font-style: 50px
+			letter-spacing: 30px
+		
+	
+
+.subir 
+	height: 40px
+	width: 40px
+	background-color: $background-color_5
+	color: $color_6
+	position: fixed
+	right: 80px
+	bottom: 40px
+	font-size: 25px
+	text-align: center
+	line-height: 30px
+	border-radius: 50%
+	box-shadow: 0px 0px 5px 5px #F8FFE5
+
+.What 
+	height: 40px
+	width: 40px
+	background-color: $background-color_6
+	color: $color_1
+	position: fixed
+	right: 30px
+	bottom: 40px
+	text-align: center
+	line-height: 35px
+	border-radius: 50%
+	border: 2px solid #F8FFE5
+
+.footer_2 
+	color: $color_5
+	padding: 20px
+	text-align: center
+	.redes 
+		a 
+			text-decoration: none
+		
+		i 
+			color: $color_1
+			font-style: 50px
+			letter-spacing: 30px
+		
+	
+
+@media only screen and (min-width: 0px) 
+	* 
+		position: static
+		padding: 1px
+		text-align: center
+	
+	.imagem 
+		height: 120px
+	
+
+@media only screen and (min-width: 360px) 
+	* 
+		font-size: 20px
+		margin: 0
+		position: static
+	
+	.galeria 
+		grid-template-columns: repeat(5,1fr)
+		grid-template-rows: repeat(3,40px)
+	
+	.barra 
+		font-size: 200px
+	
+	h1 
+		padding: 80px
+	
+	.imagem 
+		height: 200px
+	
+
+@media only screen and (min-width: 720px) 
+	* 
+		font-size: 20px
+	
+	.galeria 
+		grid-template-columns: repeat(5,1fr)
+		grid-template-rows: repeat(4,80px)
+	
+	.item1 
+		grid-column: 1/1
+		grid-row: 2/5
+	
+	.item2 
+		grid-column: 2/3
+		grid-row: 1/4
+	
+	.item3 
+		grid-column: 5/6
+		grid-row: 1/2
+	
+	.item4 
+		grid-column: 4/5
+		grid-row: 1/3
+	
+	.item5 
+		grid-column: 3/4
+		grid-row: 2/5
+	
+	.item6 
+		grid-column: 3/4
+		grid-row: 1/2
+	
+	.item7 
+		grid-column: 2/3
+		grid-row: 4/5
+	
+	.item8 
+		grid-column: 5/6
+		grid-row: 2/3
+	
+	.item9 
+		grid-column: 4/6
+		grid-row: 3/5
+	
+	.imagem 
+		height: 300px
+	
+
+@media only screen and (min-width: 1080px) 
+	* 
+		font-size: 25px
+		position: static
+	
+	.row 
+		margin: 1px
+	
+	.galeria 
+		grid-template-columns: repeat(4fr)
+		grid-template-rows: repeat(4,50px)
+	
+	.item1 
+		grid-column: 1/2
+		grid-row: 2/5
+	
+	.item2 
+		grid-column: 2/3
+		grid-row: 1/4
+	
+	.item3 
+		grid-column: 5/6
+		grid-row: 1/2
+	
+	.item4 
+		grid-column: 4/5
+		grid-row: 1/3
+	
+	.item5 
+		grid-column: 3/4
+		grid-row: 2/5
+	
+	.item6 
+		grid-column: 3/4
+		grid-row: 1/2
+	
+	.item7 
+		grid-column: 2/3
+		grid-row: 4/5
+	
+	.item8 
+		grid-column: 5/6
+		grid-row: 2/3
+	
+	.imagem 
+		height: 450px
+	

@@ -146,8 +146,8 @@ h4 {
 
 h5 {
   text-shadow: #F8FFE5;
-  text-decoration: #F8FFE5;
-  text-decoration: #F8FFE5;
+  -webkit-text-decoration: #F8FFE5;
+          text-decoration: #F8FFE5;
   color: #F8FFE5;
   height: 15%;
 }
