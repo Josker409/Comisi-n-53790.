@@ -4,10 +4,10 @@ $color_3: #F374AE
 $color_4: #131B23
 $color_5: black
 $color_6: #23B5D3
-$font-family_1: 'Oswald', sans-serif
+$font-family_1: "Oswald", sans-serif
 $font-family_2: Verdana, Geneva, Tahoma, sans-serif
-$font-family_3: sans-serif
-$font-family_4: 'Courier New', Courier, monospace
+$font-family_3: "Courier New", Courier, monospace
+$font-family_4: sans-serif
 $background-color_1: #131B23
 $background-color_2: #F374AE
 $background-color_3: #F8FFE5
@@ -15,9 +15,7 @@ $background-color_4: #48A9A6
 $background-color_5: #23B5D3
 $background-color_6: springgreen
 
-
 @import "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
-
 @keyframes aparecer 
 	from 
 		opacity: 0
@@ -25,7 +23,6 @@ $background-color_6: springgreen
 	to 
 		opacity: 1
 	
-
 
 * 
 	margin: 2%
@@ -52,7 +49,7 @@ header
 	padding: 30px
 	height: 80px
 	width: 100%
-	font-family: $font-family_4
+	font-family: $font-family_3
 	display: flex
 	justify-content: space-between
 	font-size: 25px
@@ -63,14 +60,14 @@ header
 	width: 100%
 	height: auto
 	display: grid
-	grid-template-columns: repeat(5,1fr)
+	grid-template-columns: repeat(5, 1fr)
 	grid-template-rows: repeat(3, 200px)
 	grid-template-areas: "----  img2 img6 img4 img3" " img1 img2 img5 img4 img8" " img1 img7 img5 img9 img9"
 	grid-gap: 10px
 	padding: 10px
 
 .item 
-	border: 4px solid#F8FFE5
+	border: 4px solid #F8FFE5
 	border-radius: 5px
 	background-size: cover
 	background-position: center
@@ -118,7 +115,6 @@ header
 	height: 45px
 	width: 100%
 	background: #00b4db
-	background: -webkit-linear-gradient(to right, #00b4db, #0083b0)
 	background: linear-gradient(to right, #00b4db, #0083b0)
 
 .card__title 
@@ -147,6 +143,7 @@ h4
 
 h5 
 	text-shadow: #F8FFE5
+	-webkit-text-decoration: #F8FFE5
 	text-decoration: #F8FFE5
 	color: $color_1
 	height: 15%
@@ -159,10 +156,9 @@ p1
 
 body 
 	background-color: $background-color_5
-	font-family: $font-family_3
+	font-family: $font-family_4
 	margin: 0
 	background: #00b4db
-	background: -webkit-linear-gradient(to right, #00b4db, #0083b0)
 	background: linear-gradient(to right, #00b4db, #0083b0)
 
 .logo 
@@ -172,6 +168,8 @@ body
 	
 
 .barra 
+	float: right
+	text-shadow: none
 	ul 
 		li 
 			list-style: none
@@ -188,8 +186,6 @@ body
 		animation-direction: alternate
 		animation-iteration-count: infinite
 	
-	float: right
-	text-shadow: none
 
 dt 
 	color: $color_1
@@ -215,7 +211,7 @@ footer
 		margin-bottom: 20px
 	
 	.redes 
-	a 
+		a 
 			text-decoration: none
 		
 		i 
@@ -284,8 +280,8 @@ footer
 		position: static
 	
 	.galeria 
-		grid-template-columns: repeat(5,1fr)
-		grid-template-rows: repeat(3,40px)
+		grid-template-columns: repeat(5, 1fr)
+		grid-template-rows: repeat(3, 40px)
 	
 	.barra 
 		font-size: 200px
@@ -302,8 +298,8 @@ footer
 		font-size: 20px
 	
 	.galeria 
-		grid-template-columns: repeat(5,1fr)
-		grid-template-rows: repeat(4,80px)
+		grid-template-columns: repeat(5, 1fr)
+		grid-template-rows: repeat(4, 80px)
 	
 	.item1 
 		grid-column: 1/1
@@ -355,7 +351,7 @@ footer
 	
 	.galeria 
 		grid-template-columns: repeat(4fr)
-		grid-template-rows: repeat(4,50px)
+		grid-template-rows: repeat(4, 50px)
 	
 	.item1 
 		grid-column: 1/2
