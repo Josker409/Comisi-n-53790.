@@ -156,6 +156,10 @@ h5 {
   color: #F374AE !important;
 }
 
+ul{
+  list-style-type: none !important;
+}
+
 p1 {
   color: #F8FFE5;
 }
