@@ -8,7 +8,7 @@
   }
 }
 * {
-  margin: 0;
+  margin: 2%;
   padding: 0;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
@@ -42,9 +42,9 @@ header {
   font-weight: bold;
 }
 
-.navbar{
-height: 2px;
-width: auto;
+.navbar {
+  height: 2px;
+  width: auto;
 }
 
 .galeria {
@@ -152,7 +152,7 @@ h4 {
 h5 {
   text-shadow: #F8FFE5;
   -webkit-text-decoration: #F8FFE5;
-          text-decoration: #F8FFE5;
+  text-decoration: #F8FFE5;
   color: #F8FFE5;
   height: 15%;
 }
@@ -160,8 +160,7 @@ h5 {
 .ahora {
   color: #F374AE !important;
 }
-
-ul{
+.ahora .ul {
   list-style-type: none !important;
 }
 
@@ -289,8 +288,6 @@ footer .redes i {
     padding: 1px;
     text-align: center;
   }
-
-
   .imagem {
     height: 120px;
   }
@@ -301,12 +298,10 @@ footer .redes i {
     margin: 0;
     position: static;
   }
-
-  .navbar{
+  .navbar {
     height: 2px;
     width: auto;
-    }
-  
+  }
   .galeria {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 40px);
@@ -369,8 +364,6 @@ footer .redes i {
     height: 300px;
   }
 }
-
-
 @media only screen and (min-width: 1080px) {
   * {
     font-size: 25px;
@@ -418,4 +411,6 @@ footer .redes i {
   .imagem {
     height: 450px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
