@@ -1,10 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap";
 @keyframes aparecer {
   from {
-    opacity: 0;
+    opacity: 0 !important;
   }
   to {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 * {
@@ -19,34 +19,47 @@ html {
   scroll-behavior: auto;
 }
 
-header {
-  height: 80px;
-  width: 90%;
-  padding: 20px;
-  font-size: 22px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #F8FFE5;
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  height: 80px;
-  width: 100%;
-  font-family: "Courier New", Courier, monospace;
-  display: flex;
-  justify-content: space-between;
-  font-size: 25px;
-  padding: 20px;
-  font-weight: bold;
-}
-
 .navbar {
-  height: 2px;
-  width: auto;
+  background-color: #0083b0; /* Color de fondo de la barra de navegación */
+  padding: 11px; /* Espacio de relleno interno de la barra de navegación */
+
+}
+nav{
+  height: 260px !important;
+}
+.navbar-brand {
+  font-size: 1px; /* Tamaño de fuente del logotipo */
+  margin-right: 10px;
+  align-items: normal;
+  font-weight: bolder; /* Peso de la fuente del logotipo */
 }
 
+.navbar-brand .logo {
+  color: #333333; /* Color del texto del logotipo */
+  text-align: left;
+  margin-right: 10px;
+  font-weight: 10px;
+}
+.navbar-brand .logo span {
+  color: #F8FFE5; /* Color del texto destacado del logotipo */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1px; /* Espacio entre elementos del menú */
+}
+
+.navbar-nav .nav-link {
+  color: #333333; /* Color del texto del enlace */
+  font-weight: bold; /* Peso de la fuente del enlace */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #F8FFE5; /* Color del texto del enlace al pasar el cursor */
+}
+
+.navbar-toggler-icon {
+  border-color: #333333; /* Color del icono del botón desplegable */
+}
 .galeria {
   width: 100%;
   height: auto;
@@ -136,7 +149,13 @@ header {
 }
 
 main {
-  height: 250px;
+  height: 300px;
+  margin: 100px;
+}
+.img-fluid{
+  height: 400px;
+  margin: 40px;
+  border-radius: 100%;
 }
 
 aside {
@@ -176,32 +195,6 @@ body {
   background: linear-gradient(to right, #00b4db, #0083b0);
 }
 
-.logo {
-  float: left;
-  color: #F8FFE5;
-}
-.logo span {
-  color: #131B23;
-}
-
-.barra {
-  float: right;
-  text-shadow: none;
-}
-.barra ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 2px;
-}
-.barra a {
-  color: #F8FFE5;
-  text-decoration: none;
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
 
 dt {
   color: #F8FFE5;
@@ -269,7 +262,7 @@ footer .redes i {
 }
 
 .footer_2 {
-  color: black;
+  color:   black;
   padding: 20px;
   text-align: center;
 }
@@ -298,24 +291,34 @@ footer .redes i {
     margin: 0;
     position: static;
   }
-  .navbar {
-    height: 2px;
-    width: auto;
-  }
+
   .galeria {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 40px);
   }
   .barra {
     font-size: 200px;
+    margin-bottom: auto;
   }
   h1 {
-    padding: 80px;
+    padding: 60px;
+  }
+  .img-fluid{
+    height: 340px;
+    margin: 20px;
+    border-radius: 100%;
   }
   .imagem {
     height: 200px;
   }
 }
+@media only screen and (min-width: 550px) {
+
+  *{
+    text-align: center;
+  }
+}
+
 @media only screen and (min-width: 720px) {
   * {
     font-size: 20px;
