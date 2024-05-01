@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap";
+
 @keyframes aparecer {
   from {
     opacity: 0 !important;
@@ -7,70 +8,63 @@
     opacity: 1 !important;
   }
 }
+
+
 * {
-  margin: 2%;
   padding: 0;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
-  font-size: 25px;
+  font-size: 18px;
+}
+body{
+  background: linear-gradient(to right, #00b4db, #006385);
 }
 
-html {
-  scroll-behavior: auto;
-}
 
 .navbar {
-  background-color: #0083b0; /* Color de fondo de la barra de navegación */
-  padding: 11px; /* Espacio de relleno interno de la barra de navegación */
-
+  padding: 10px; /* Espacio de relleno interno de la barra de navegación */
 }
 nav{
-  height: 260px !important;
+  position: fixed;
 }
 .navbar-brand {
   font-size: 1px; /* Tamaño de fuente del logotipo */
-  margin-right: 10px;
-  align-items: normal;
   font-weight: bolder; /* Peso de la fuente del logotipo */
 }
-
 .navbar-brand .logo {
   color: #333333; /* Color del texto del logotipo */
   text-align: left;
-  margin-right: 10px;
+  margin-right: 8px;
   font-weight: 10px;
 }
 .navbar-brand .logo span {
   color: #F8FFE5; /* Color del texto destacado del logotipo */
 }
-
 .navbar-nav .nav-item {
   margin-right: 1px; /* Espacio entre elementos del menú */
 }
-
 .navbar-nav .nav-link {
   color: #333333; /* Color del texto del enlace */
   font-weight: bold; /* Peso de la fuente del enlace */
 }
-
 .navbar-nav .nav-link:hover {
   color: #F8FFE5; /* Color del texto del enlace al pasar el cursor */
 }
-
 .navbar-toggler-icon {
   border-color: #333333; /* Color del icono del botón desplegable */
 }
+
+
 .galeria {
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 80px);
   grid-template-areas: "----  img2 img6 img4 img3" " img1 img2 img5 img4 img8" " img1 img7 img5 img9 img9";
   grid-gap: 10px;
   padding: 10px;
 }
-
 .item {
   border: 4px solid #F8FFE5;
   border-radius: 5px;
@@ -80,51 +74,43 @@ nav{
 .item:hover {
   filter: grayscale(50%);
 }
-
 .item1 {
   grid-area: img1;
   background-image: url(multimedia/publication.png);
 }
-
 .item2 {
   grid-area: img2;
   background-image: url(multimedia/laptop-6062423_1280.jpg);
 }
-
 .item3 {
   grid-area: img3;
   background-color: #131B23;
 }
-
 .item4 {
   grid-area: img4;
   background-image: url(multimedia/digital-marketing-1433427_1280.jpg);
 }
-
 .item5 {
   grid-area: img5;
   background-image: url(multimedia/office-925806_1280.jpg);
 }
-
 .item6 {
   grid-area: img6;
   background-color: #F374AE;
 }
-
 .item7 {
   grid-area: img7;
   background-color: #F8FFE5;
 }
-
 .item8 {
   grid-area: img8;
   background-color: #48A9A6;
 }
-
 .item9 {
   grid-area: img9;
   background-image: url(multimedia/mesa-trabajo.png.jpg);
 }
+
 
 .card {
   height: 45px;
@@ -132,13 +118,11 @@ nav{
   background: #00b4db;
   background: linear-gradient(to right, #00b4db, #0083b0);
 }
-
 .card__title {
   color: #fff;
   text-align: center;
   font-size: 35px;
 }
-
 .card__btn {
   color: #F8FFE5;
   text-decoration: none;
@@ -147,27 +131,25 @@ nav{
   text-transform: capitalize;
   display: block;
 }
-
 main {
-  height: 300px;
-  margin: 100px;
+  height: 400px;
+  margin: 10px;
 }
 .img-fluid{
-  height: 400px;
-  margin: 40px;
-  border-radius: 100%;
+  height: 480px;
+  margin: 10px;
+  border-radius: 10%;
+}
+aside {
+  height: 100px;
 }
 
-aside {
-  height: 300px;
-}
 
 h4 {
-  height: 300px;
-  padding: 90px;
+  height: 20px;
+  padding: 40px;
   background-position: center;
 }
-
 h5 {
   text-shadow: #F8FFE5;
   -webkit-text-decoration: #F8FFE5;
@@ -175,6 +157,7 @@ h5 {
   color: #F8FFE5;
   height: 15%;
 }
+
 
 .ahora {
   color: #F374AE !important;
@@ -187,39 +170,29 @@ p1 {
   color: #F8FFE5;
 }
 
-body {
-  background-color: #23B5D3;
-  font-family: sans-serif;
-  margin: 0;
-  background: #00b4db;
-  background: linear-gradient(to right, #00b4db, #0083b0);
-}
 
 
 dt {
   color: #F8FFE5;
   background-position: right;
 }
-
 .contenedor {
   display: flex;
 }
-
 .imagen {
   width: 25px;
 }
-
 .cuadro {
   height: 150px;
   width: 150px;
 }
+
 
 .footer {
   color: black;
   padding: 20px;
   text-align: center;
 }
-
 footer p {
   margin-bottom: 20px;
 }
@@ -231,6 +204,7 @@ footer .redes i {
   font-style: 50px;
   letter-spacing: 30px;
 }
+
 
 .subir {
   height: 40px;
@@ -246,7 +220,6 @@ footer .redes i {
   border-radius: 50%;
   box-shadow: 0px 0px 5px 5px #F8FFE5;
 }
-
 .What {
   height: 40px;
   width: 40px;
@@ -261,19 +234,6 @@ footer .redes i {
   border: 2px solid #F8FFE5;
 }
 
-.footer_2 {
-  color:   black;
-  padding: 20px;
-  text-align: center;
-}
-.footer_2 .redes a {
-  text-decoration: none;
-}
-.footer_2 .redes i {
-  color: #F8FFE5;
-  font-style: 50px;
-  letter-spacing: 30px;
-}
 
 @media only screen and (min-width: 0px) {
   * {
@@ -281,20 +241,11 @@ footer .redes i {
     padding: 1px;
     text-align: center;
   }
-  .imagem {
-    height: 120px;
-  }
 }
 @media only screen and (min-width: 360px) {
-  * {
-    font-size: 20px;
-    margin: 0;
-    position: static;
-  }
-
   .galeria {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 40px);
+    grid-template-rows: repeat(3, 80px);
   }
   .barra {
     font-size: 200px;
@@ -304,28 +255,33 @@ footer .redes i {
     padding: 60px;
   }
   .img-fluid{
-    height: 340px;
-    margin: 20px;
-    border-radius: 100%;
+    height: 480px;
+    margin: 10px;
+    border-radius: 10%;
   }
-  .imagem {
+  video{
     height: 200px;
+  }
+  img{
+    height: 240px;
   }
 }
 @media only screen and (min-width: 550px) {
-
-  *{
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 720px) {
-  * {
-    font-size: 20px;
-  }
   .galeria {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 80px);
+    grid-template-rows: repeat(3, 100px);
+  }
+  video{
+    height: 280px;
+  }
+  img{
+    height: 280px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .galeria {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 60px);
   }
   .item1 {
     grid-column: 1/1;
@@ -364,20 +320,32 @@ footer .redes i {
     grid-row: 3/5;
   }
   .imagem {
-    height: 300px;
+    height: 280px;
+  }
+  video{
+    height: 320px;
+  }
+  img{
+    height: 320px;
   }
 }
-@media only screen and (min-width: 1080px) {
-  * {
-    font-size: 25px;
-    position: static;
+@media only screen and (min-width: 800px){
+  .img-fluid{
+    height: 540px;
+    margin: 10px;
+    border-radius: 10%;
   }
-  .row {
-    margin: 1px;
+
+}
+@media only screen and (min-width: 1008px) {
+  .img-fluid{
+    height: 480px;
+    margin: 10px;
+    border-radius: 10%;
   }
   .galeria {
     grid-template-columns: repeat(4fr);
-    grid-template-rows: repeat(4, 50px);
+    grid-template-rows: repeat(4, 100px);
   }
   .item1 {
     grid-column: 1/2;

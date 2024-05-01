@@ -5,14 +5,12 @@ $color_4: #F374AE;
 $color_5: black;
 $color_6: #23B5D3;
 $font-family_1: "Oswald", sans-serif;
-$font-family_2: sans-serif;
-$background-color_1: #0083b0;
-$background-color_2: #131B23;
-$background-color_3: #F374AE;
-$background-color_4: #F8FFE5;
-$background-color_5: #48A9A6;
-$background-color_6: #23B5D3;
-$background-color_7: springgreen;
+$background-color_1: #131B23;
+$background-color_2: #F374AE;
+$background-color_3: #F8FFE5;
+$background-color_4: #48A9A6;
+$background-color_5: #23B5D3;
+$background-color_6: springgreen;
 $border-color_1: #333333;
 
 @import "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap";
@@ -25,31 +23,27 @@ $border-color_1: #333333;
 	}
 }
 * {
-	margin: 2%;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: $font-family_1;
-	font-size: 25px;
+	font-size: 18px;
 }
-html {
-	scroll-behavior: auto;
+body {
+	background: linear-gradient(to right, #00b4db, #006385);
 }
 .navbar {
-	background-color: $background-color_1;
-	padding: 11px;
+	padding: 10px;
 }
 nav {
-	height: 260px !important;
+	position: fixed;
 }
 .navbar-brand {
 	font-size: 1px;
-	margin-right: 10px;
-	align-items: normal;
 	font-weight: bolder;
 	.logo {
 		color: $color_1;
 		text-align: left;
-		margin-right: 10px;
+		margin-right: 8px;
 		font-weight: 10px;
 		span {
 			color: $color_2;
@@ -76,7 +70,7 @@ nav {
 	height: auto;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(3, 200px);
+	grid-template-rows: repeat(3, 80px);
 	grid-template-areas: "----  img2 img6 img4 img3" " img1 img2 img5 img4 img8" " img1 img7 img5 img9 img9";
 	grid-gap: 10px;
 	padding: 10px;
@@ -100,7 +94,7 @@ nav {
 }
 .item3 {
 	grid-area: img3;
-	background-color: $background-color_2;
+	background-color: $background-color_1;
 }
 .item4 {
 	grid-area: img4;
@@ -112,15 +106,15 @@ nav {
 }
 .item6 {
 	grid-area: img6;
-	background-color: $background-color_3;
+	background-color: $background-color_2;
 }
 .item7 {
 	grid-area: img7;
-	background-color: $background-color_4;
+	background-color: $background-color_3;
 }
 .item8 {
 	grid-area: img8;
-	background-color: $background-color_5;
+	background-color: $background-color_4;
 }
 .item9 {
 	grid-area: img9;
@@ -146,20 +140,20 @@ nav {
 	display: block;
 }
 main {
-	height: 300px;
-	margin: 100px;
+	height: 400px;
+	margin: 10px;
 }
 .img-fluid {
-	height: 400px;
-	margin: 40px;
-	border-radius: 100%;
+	height: 480px;
+	margin: 10px;
+	border-radius: 10%;
 }
 aside {
-	height: 300px;
+	height: 100px;
 }
 h4 {
-	height: 300px;
-	padding: 90px;
+	height: 20px;
+	padding: 40px;
 	background-position: center;
 }
 h5 {
@@ -177,13 +171,6 @@ h5 {
 }
 p1 {
 	color: $color_2;
-}
-body {
-	background-color: $background-color_6;
-	font-family: $font-family_2;
-	margin: 0;
-	background: #00b4db;
-	background: linear-gradient(to right, #00b4db, #0083b0);
 }
 dt {
 	color: $color_2;
@@ -222,7 +209,7 @@ footer {
 .subir {
 	height: 40px;
 	width: 40px;
-	background-color: $background-color_6;
+	background-color: $background-color_5;
 	color: $color_6;
 	position: fixed;
 	right: 80px;
@@ -236,7 +223,7 @@ footer {
 .What {
 	height: 40px;
 	width: 40px;
-	background-color: $background-color_7;
+	background-color: $background-color_6;
 	color: $color_2;
 	position: fixed;
 	right: 30px;
@@ -246,40 +233,17 @@ footer {
 	border-radius: 50%;
 	border: 2px solid #F8FFE5;
 }
-.footer_2 {
-	color: $color_5;
-	padding: 20px;
-	text-align: center;
-	.redes {
-		a {
-			text-decoration: none;
-		}
-		i {
-			color: $color_2;
-			font-style: 50px;
-			letter-spacing: 30px;
-		}
-	}
-}
 @media only screen and (min-width: 0px) {
 	* {
 		position: static;
 		padding: 1px;
 		text-align: center;
 	}
-	.imagem {
-		height: 120px;
-	}
 }
 @media only screen and (min-width: 360px) {
-	* {
-		font-size: 20px;
-		margin: 0;
-		position: static;
-	}
 	.galeria {
 		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(3, 40px);
+		grid-template-rows: repeat(3, 80px);
 	}
 	.barra {
 		font-size: 200px;
@@ -289,26 +253,33 @@ footer {
 		padding: 60px;
 	}
 	.img-fluid {
-		height: 340px;
-		margin: 20px;
-		border-radius: 100%;
+		height: 480px;
+		margin: 10px;
+		border-radius: 10%;
 	}
-	.imagem {
+	video {
 		height: 200px;
+	}
+	img {
+		height: 240px;
 	}
 }
 @media only screen and (min-width: 550px) {
-	* {
-		text-align: center;
+	.galeria {
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(3, 100px);
+	}
+	video {
+		height: 280px;
+	}
+	img {
+		height: 280px;
 	}
 }
 @media only screen and (min-width: 720px) {
-	* {
-		font-size: 20px;
-	}
 	.galeria {
 		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: repeat(4, 80px);
+		grid-template-rows: repeat(4, 60px);
 	}
 	.item1 {
 		grid-column: 1/1;
@@ -347,20 +318,31 @@ footer {
 		grid-row: 3/5;
 	}
 	.imagem {
-		height: 300px;
+		height: 280px;
+	}
+	video {
+		height: 320px;
+	}
+	img {
+		height: 320px;
 	}
 }
-@media only screen and (min-width: 1080px) {
-	* {
-		font-size: 25px;
-		position: static;
+@media only screen and (min-width: 800px) {
+	.img-fluid {
+		height: 540px;
+		margin: 10px;
+		border-radius: 10%;
 	}
-	.row {
-		margin: 1px;
+}
+@media only screen and (min-width: 1008px) {
+	.img-fluid {
+		height: 480px;
+		margin: 10px;
+		border-radius: 10%;
 	}
 	.galeria {
 		grid-template-columns: repeat(4fr);
-		grid-template-rows: repeat(4, 50px);
+		grid-template-rows: repeat(4, 100px);
 	}
 	.item1 {
 		grid-column: 1/2;
@@ -398,3 +380,4 @@ footer {
 		height: 450px;
 	}
 }
+
